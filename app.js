@@ -1,5 +1,10 @@
 function isPalindrome(line) {
-    return undefined;
+    let isPalin = line.toString().split('').reverse().join('');
+    if (isPalin == line) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 console.log(isPalindrome("anna")); // true
